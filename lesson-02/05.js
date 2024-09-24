@@ -2,7 +2,7 @@ let passport = {
     name: "Petr",
     surname: "Petrov",
 };
-let newPassport = Object.assign({},passport);
-newPassport.name = "ivan";
+let newpassport = passport;
+newpassport.name = "ivan";
 console.log(passport.name);
-console.log(newPassport.name);
+console.log(newpassport.name);
