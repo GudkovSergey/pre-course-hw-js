@@ -6,7 +6,8 @@ let passportWithAddress = {
         city: "LA"
     }
 };
-let passportadress = Object.assign({},passportWithAddress);
-passportadress.address.city = "Bobryisk";
+let passportadress = structuredClone(passportWithAddress);
+
+passportadress.address.city = "Bobryisk"
 console.log(passportadress.address.city);
 console.log(passportWithAddress.address.city);
